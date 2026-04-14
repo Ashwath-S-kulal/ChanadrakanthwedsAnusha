@@ -240,6 +240,11 @@ body{
   transform:translateY(-100%);
   transition:transform .8s cubic-bezier(.16,1,.3,1);
 }
+@media (max-width: 768px) {
+  #nav {
+    display: none;
+  }
+}
 #nav.show{transform:translateY(0)}
 .nav-brand{
   font-family:'Great Vibes',cursive;
@@ -526,7 +531,7 @@ body{
 }
 .cer-lbl{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.3em;color:var(--gold4);text-transform:uppercase;margin-bottom:1rem}
 .cer-val{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:400;color:var(--gold2);line-height:1.3}
-.cer-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.92rem;color:var(--mist);margin-top:.4rem;opacity:.7}
+.cer-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.92rem;color:var(--white);margin-top:.4rem;opacity:.7}
 .panchang{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.88rem;color:var(--faint);letter-spacing:.06em;margin-bottom:3rem}
 .cer-om{font-family:'Cinzel',serif;font-size:3rem;color:var(--gold);animation:glowpulse 4s ease-in-out infinite;margin-bottom:2.5rem;display:block;text-shadow:0 0 40px rgba(212,168,71,.5)}
 .mangala{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--faint);margin-top:1.5rem}
@@ -704,7 +709,7 @@ footer{
   position:relative;
 }
 footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,168,71,.3),transparent)}
-.foot-names{font-family:'Great Vibes',cursive;font-size:2.2rem;color:var(--gold);margin-bottom:.6rem;text-shadow:0 0 25px rgba(212,168,71,.35)}
+.foot-names{font-family:'Italianno',cursive;font-size:2.2rem;color:var(--gold);margin-bottom:.6rem;text-shadow:0 0 25px rgba(212,168,71,.35)}
 .foot-date{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.25em;color:var(--gold4);margin-bottom:1rem;opacity:.7}
 .foot-stars{color:var(--gold);opacity:.25;font-size:.8rem;letter-spacing:.6em;display:block;margin-bottom:.8rem}
 .foot-love{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;color:var(--faint)}
@@ -862,7 +867,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <div class="s-tag rv">Auspicious Muhurta</div>
     <h2 class="s-title rv">The Wedding Ceremony</h2>
     <div class="s-gem rv" style="opacity:.3">◈ &nbsp; ✦ &nbsp; ◈</div>
-    <p class="panchang rv">Shalivahana Shaka 1948 &nbsp;·&nbsp; Parabha Samvatsara &nbsp;·&nbsp; Vrishabha Masa</p>
+    <p class="panchang rv">Swasthi shree Parabhavanama savathsara  &nbsp;·&nbsp; Meshamasa Dhina 9 &nbsp;·&nbsp; Vaishaka shukla 7</p>
     <span class="cer-om rv">ॐ</span>
     <div class="cer-grid">
       <div class="cer-card rv d1">
@@ -878,10 +883,9 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="cer-card rv d3">
         <div class="cer-lbl">Auspicious Time</div>
         <div class="cer-val">Morning  12:05</div>
-        <div class="cer-sub">Mangalacharana</div>
+        <div class="cer-sub">Karkataka lagna</div>
       </div>
     </div>
-    <p class="mangala rv">Akshata Arohana &amp; Sacred Rituals</p>
   </section>
 
   <!-- COUNTDOWN -->
@@ -909,24 +913,16 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <p class="gal-note rv">Memories that shine forever</p>
     <div class="gal-grid">
       <div class="g-item rv-s d1" onclick="openLb(this)">
-        <img src="Photos/657379178_17886339933465690_6749245791457502477_n.jpg" alt="Chandrakanth & Anusha"/>
+        <img src="Photos/658219725_17886340164465690_3432795314790024413_n.jpg" alt="Chandrakanth & Anusha"/>
         <div class="g-txt">Chandrakanth &amp; Anusha</div>
       </div>
       <div class="g-item rv-s d2" onclick="openLb(this)">
-        <img src="Photos/656630406_17886340083465690_5629060332642083342_n.jpg" alt="Together"/>
+        <img src="Photos/4.jpg" alt="Together"/>
         <div class="g-txt">Together</div>
       </div>
       <div class="g-item rv-s d3" onclick="openLb(this)">
-        <img src="Photos/656772432_17886340188465690_1229694671857076052_n.jpg" alt="Love"/>
+        <img src="Photos/656585736_17886340101465690_3821546554712598333_n.jpg" alt="Love"/>
         <div class="g-txt">Love</div>
-      </div>
-      <div class="g-item rv-s d4" onclick="openLb(this)">
-        <img src="Photos/657286433_17886340176465690_4987963764246023316_n.jpg" alt="Joy"/>
-        <div class="g-txt">Joy</div>
-      </div>
-      <div class="g-item rv-s d5" onclick="openLb(this)">
-        <img src="Photos/657340134_17886340110465690_2308540415588869213_n.jpg" alt="Blessings"/>
-        <div class="g-txt">Blessings</div>
       </div>
     </div>
   </section>
@@ -953,7 +949,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
               Mair Kome, Udupi — 576223<br/>
               Karnataka
             </div>
-            <a class="maps-btn" href="https://www.google.com/maps/place/Saptapadi+Convention+Hall/@13.4979791,74.8195027,2848m/data=!3m1!1e3!4m10!1m2!2m1!1sSaptapadi+Convention+Hall+mailkumme!3m6!1s0x3bbc99deea23ae27:0x29728ad14ef73bf2!8m2!3d13.4986594!4d74.8332658" target="_blank">
+            <a class="maps-btn" href="https://www.google.com/maps/place/Saptapadi+Convention+Hall/@13.4985645,74.8309708,423m/data=!3m1!1e3!4m10!1m2!2m1!1ssapthapadhi+convetional+hall+mailkomme!3m6!1s0x3bbc99deea23ae27:0x29728ad14ef73bf2!8m2!3d13.4986594!4d74.8332658!15sCiZzYXB0aGFwYWRoaSBjb252ZXRpb25hbCBoYWxsIG1haWxrb21tZVooIiZzYXB0aGFwYWRoaSBjb252ZXRpb25hbCBoYWxsIG1haWxrb21tZZIBEWNvbnZlbnRpb25fY2VudGVymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJzMWIxVnVTa1pOUkd3MlZtdGFjR0ZyZEhsaVJFWkZaRmQwY1ZveFJSQULgAQD6AQQIABAo!16s%2Fg%2F11vqzpg7c0?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
               📍 Open in Google Maps
             </a>
           </div>
@@ -974,13 +970,12 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
     <div class="rsvp-join rv">Your Presence is Our Joy</div>
     <div class="rsvp-sub rv">Join the Celebration · 23 April 2026</div>
     <div class="rsvp-btns rv">
-      <a class="btn-wa" href="https://wa.me/918431294514" target="_blank">💬 WhatsApp Us</a>
-      <a class="btn-call" href="tel:+918431294514">📞 +91 84312 94514</a>
+      <a class="btn-call" href="tel:+918431294514">+91 84312 94514</a>
     </div>
   </section>
 
   <footer>
-    <div class="foot-names">Chandrakanth &amp; Anusha</div>
+    <div class="foot-names">Anusha &amp; Chandrakanth</div>
     <div class="foot-date">23 April 2026 &nbsp;·&nbsp; Saptapadi Convention Hall, Udupi</div>
     <span class="foot-stars">✦ &nbsp; ✦ &nbsp; ✦</span>
     <div class="foot-love">With love &amp; infinite blessings</div>
